@@ -1357,44 +1357,67 @@ section.s {
 }
 
 /* NAVBAR mobile */
+/* ===== MOBILE FIX ===== */
+
 @media (max-width: 768px) {
+
   nav {
-    padding: 0 16px;
+    padding: 0 12px;
+    height: 60px;
   }
 
   .logo {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     letter-spacing: 1px;
+    max-width: 42%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .ncta {
-    padding: 6px 12px;
-    font-size: 0.55rem;
+    padding: 6px 10px;
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
   }
-}
 
-/* HERO mobile layout */
-@media (max-width: 768px) {
   .hero {
-    padding-top: 100px;
+    padding: 95px 18px 60px;
+  }
+
+  h1.hn {
+    font-size: clamp(24px, 8vw, 42px);
+
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+
+    line-height: 1.15;
+    word-break: break-word;
+  }
+
+  .hl1 {
+    display: block;
   }
 
   .oneliner {
-    font-size: 0.9rem;
+    font-size: 0.82rem;
+    line-height: 1.7;
   }
 
   .hchips {
-    gap: 6px;
+    gap: 8px;
   }
 
   .hchip {
     font-size: 0.5rem;
-    padding: 3px 8px;
+    padding: 5px 10px;
   }
 
   .cta {
     flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
   }
 
   .btn {
@@ -1408,7 +1431,7 @@ section.s {
 
   .hbi {
     border-right: none;
-    border-bottom: 1px solid var(--bd);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
   }
 
   .hbi:last-child {
