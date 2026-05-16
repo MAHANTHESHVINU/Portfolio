@@ -397,14 +397,14 @@
       font-family: 'Syne', sans-serif;
       font-weight: 800;
       font-size: clamp(28px, 6vw, 72px);
-      line-height: 1;
+      line-height: 1.1;
       letter-spacing: -1px;
       margin-bottom: 26px;
       animation: fadeUp .7s .08s ease both;
 
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
     }
 
     .hl1 {
@@ -1412,8 +1412,11 @@ section.s {
 /* EXTRA SMALL DEVICES */
 @media (max-width: 480px) {
   h1.hn {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 1.25;
+    white-space: normal;
   }
+}
 
   .oneliner {
     font-size: 0.8rem;
